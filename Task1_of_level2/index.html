@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <table class="container">
+        <tr>
+            <td><input class="subcontainer" type = "text" id="answer"></td>
+        </tr>
+        <tr>
+            <td><input  value="(" type = "button" onclick="output('(')"></td>
+            <td><input  value=")" type = "button" onclick="output(')')"></td>
+            <td><input value="Del" type= "button" onclick="emptyscreen()"></td>
+            <td><input  value="%" type = "button" onclick="output('%')"></td>
+        </tr>
+        <tr>
+            <td><input  value="1" type = "button" onclick="output('1')"></td>
+            <td><input  value="2" type = "button" onclick="output('2')"></td>
+            <td><input  value="3" type = "button" onclick="output('3')"></td>
+            <td><input  value="*" type = "button" onclick="output('*')"></td>
+        </tr>
+        <tr>
+            <td><input  value="4" type = "button" onclick="output('4')"></td>
+            <td><input  value="5" type = "button" onclick="output('5')"></td>
+            <td><input  value="6" type = "button" onclick="output('6')"></td>
+            <td><input  value="-" type = "button" onclick="output('-')"></td>
+        </tr>
+        <tr>
+            <td><input  value="7" type = "button" onclick="output('7')"></td>
+            <td><input  value="8" type = "button" onclick="output('8')"></td>
+            <td><input  value="9" type = "button" onclick="output('9')"></td>
+            <td><input  value="+" type = "button" onclick="output('+')"></td>
+        </tr>
+        <tr>
+            <td><input  value="0" type = "button" onclick="output('0')"></td>
+            <td><input  value="." type = "button" onclick="output('.')"></td>
+            <td><input  value="/" type = "button" onclick="output('/')"></td>
+            <td><input  value="=" type = "button" onclick="compute()"></td>
+        </tr>
+    </table>
+    <script src ="javascript/computation.js"></script>
+    
+</body>
+</html>
